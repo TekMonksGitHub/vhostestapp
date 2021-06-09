@@ -1,0 +1,4 @@
+{
+    "extensions": ["proxy","diskcache"],
+    "proxies": [{"http(.*)://localhost:8080/apps/test1/(.*)":"http{{{$1}}}://test1.monkshu.org:8080/apps/test1/{{{$2}}}"}]
+}

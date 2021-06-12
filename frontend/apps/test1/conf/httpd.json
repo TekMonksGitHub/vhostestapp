@@ -2,5 +2,5 @@
     "extensions": ["rewriteurl","proxy","redirect","diskcache"],
     "proxies": [{"http(.*)://localhost:8080/apps/test1/(.*)":"http{{{$1}}}://test1.monkshu.org:8080/apps/test1/{{{$2}}}"}],
     "rewriteurl": [{"/test1/(.*)":"/apps/test1/{{{$1}}}"}],
-    "redirects": [{"http.*://localhost:8080/yahoo/(.*)":"https://www.yahoo.com/{{{$1}}}","code":301}]
+    "redirects": [{"http.*://localhost:8080/yahoo/?(.*)":"https://www.yahoo.com/{{{$1}}}","code":301}]
 }
